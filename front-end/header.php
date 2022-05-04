@@ -13,10 +13,10 @@
             <a class="nav-link" aria-current="page" href="createUser.php">Cadastro de usuários</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Cadastro de Empresas</a>
+            <a class="nav-link" href="createCompanies.php">Cadastro de Empresas</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Listar Empresas</a>
+            <a class="nav-link" href="listCompanies.php">Listar Empresas</a>
           </li>
         </ul>
       </div>

@@ -38,23 +38,15 @@
         <div class="px-4 py-5 my-5">
             <div class="card mb-3">
                 <div class="card-body">
-                    <h5 class="card-title">Cadastro de usuários</h5>
+                    <h5 class="card-title">Cadastro de Empresas</h5>
                     <form>
                         <div class="mb-3">
-                            <label for="nome" class="form-label">Nome</label>
+                            <label for="nome" class="form-label">Nome Fantasia</label>
                             <input type="text" class="form-control" id="nome" name="nome" required>
                         </div>
                         <div class="mb-3">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="email" name="email" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="senha" class="form-label">Senha</label>
-                            <input type="password" class="form-control" id="senha" name="senha" required>
-                            <div id="passwordHelpBlock" class="form-text">
-                                Sua senha deve ter de no mínimo 7 caracteres, conter letras e números 
-                                e não deve conter espaços, caracteres especiais ou emoji.
-                            </div>
+                            <label for="cnpj" class="form-label">CNPJ</label>
+                            <input type="text" class="form-control" id="cnpj" name="cnpj" required>
                         </div>
                         <button type="submit" class="btn btn-primary">Cadastrar</button>
                     </form>
