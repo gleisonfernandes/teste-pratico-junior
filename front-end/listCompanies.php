@@ -36,7 +36,12 @@
 
     <div class="container marketing">
         <div class="px-4 py-5 my-5">
-            
+          <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action">Empresa 1</a>
+            <a href="#" class="list-group-item list-group-item-action">Empresa 2</a>
+            <a href="#" class="list-group-item list-group-item-action">Empresa 3</a>
+            <a href="#" class="list-group-item list-group-item-action">Empresa 4</a>
+          </div>
         </div>
     </div><!-- /.container -->
 
