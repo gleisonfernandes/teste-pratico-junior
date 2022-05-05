@@ -26,9 +26,9 @@
     </style>
     
     <!-- Customização do CSS -->
-    <link href="style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="bg-light">
     <?php
         require('header.php');
     ?>
@@ -59,23 +59,23 @@
                           <input type="text" class="form-control" id="TelefoneInput" name="telefone" placeholder="(00) 0000-0000" maxlength="10" oninput="criaMascara('Telefone')" onkeypress="if (!isNaN(String.fromCharCode(window.event.keyCode))) return true; else return false;">
                       </div>
                       
-                      <div class="col-2">
+                      <div class="col-md-2">
                           <label for="cep" class="form-label">CEP *</label>
                           <input type="text" class="form-control" id="cepInput" name="cep" placeholder="00000-000" oninput="criaMascara('cep')" onblur="pesquisacep(this.value);" maxlength="8" onkeypress="if (!isNaN(String.fromCharCode(window.event.keyCode))) return true; else return false;" required>
                       </div>
-                      <div class="col-4">
+                      <div class="col-md-4">
                           <label for="rua" class="form-label">Endereço *</label>
                           <input type="text" class="form-control" id="rua" name="rua" required>
                       </div>
-                      <div class="col-1">
+                      <div class="col-md-1">
                           <label for="numero" class="form-label">Nº *</label>
                           <input type="text" class="form-control" id="numero" name="numero" placeholder="0" maxlength="5" required>
                       </div>
-                      <div class="col-4">
+                      <div class="col-md-4">
                           <label for="complemento" class="form-label">Complemento</label>
                           <input type="text" class="form-control" id="complemento" name="complemento" maxlength="100">
                       </div>
-                      <div class="col-3">
+                      <div class="col-md-3">
                           <label for="bairro" class="form-label">Bairro *</label>
                           <input type="text" class="form-control" id="bairro" name="bairro" required>
                       </div>

@@ -1,0 +1,18 @@
+.bg-dark {
+    background: linear-gradient(to right, #5b07d5,#f1f);
+    filter: drop-shadow( 0 .125rem .25rem #a40be855);
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: #ffffff;
+    align-items: center;
+    text-align: center;
+}
+.navbar-dark .navbar-toggler {
+    color: #ffffffab;
+    border-color: #ffffffab;
+}
+.py-5 {
+    padding-top: 3rem!important;
+    padding-bottom: 3rem!important;
+    filter: drop-shadow( 0 .125rem .25rem #a40be810);
+}

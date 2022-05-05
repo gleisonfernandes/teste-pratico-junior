@@ -12,48 +12,32 @@ function calcular() {
 	
 function versenha()
 {
-    // Get the current type of the password field will be password or text
+    // Obtém o tipo atual do campo de senha será senha ou texto
     var passwordFieldType = document.getElementById("senha").type;
  
-    // Check to see if the type is a password field
+    // Verifica se o tipo é um campo de senha
     if(passwordFieldType == 'password')
     {
-        // Change the password field to text
-        //passwordField.attr('type', 'text');
+        // Muda o campo de senha para texto
         document.getElementById ("senha"). type = 'text';
- 
-        // Change the Text on the show password button to Hide
-        //$(this).val('Hide');
     } else {
-        // If the password field type is not a password field then set it to password
-        //passwordField.attr('type', 'password');
+        // Se o tipo de campo de senha não for um campo de senha, defina-o como senha
         document.getElementById ("senha"). type = 'password';
- 
-        // Change the value of the show password button to Show
-        //$(this).val('Show');
     }
 }
 
 function versenha2()
 {
-    // Get the current type of the password field will be password or text
+    // Obtém o tipo atual do campo de senha será senha ou texto
     var passwordFieldType = document.getElementById("senha2").type;
  
-    // Check to see if the type is a password field
+    // Verifica se o tipo é um campo de senha
     if(passwordFieldType == 'password')
     {
-        // Change the password field to text
-        //passwordField.attr('type', 'text');
+        // Muda o campo de senha para texto
         document.getElementById ("senha2"). type = 'text';
- 
-        // Change the Text on the show password button to Hide
-        //$(this).val('Hide');
     } else {
-        // If the password field type is not a password field then set it to password
-        //passwordField.attr('type', 'password');
+        // Se o tipo de campo de senha não for um campo de senha, defina-o como senha
         document.getElementById ("senha2"). type = 'password';
- 
-        // Change the value of the show password button to Show
-        //$(this).val('Show');
     }
 }

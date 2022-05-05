@@ -26,9 +26,9 @@
     </style>
     
     <!-- Customização do CSS -->
-    <link href="style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="bg-light">
     <?php
         require('header.php');
     ?>
