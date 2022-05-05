@@ -1,14 +1,15 @@
-
-function calcular() {
+function verificasenha()
+{
   
-  if(document.getElementById('senha').value == "" || document.getElementById('senha2').value == ""){
-      alert('As senhas não podem ser vazias e são itens obrigatórios. Digitias!');
-	  }
-    if(document.getElementById('senha').value != document.getElementById('senha2').value){
-      alert('As senhas digitadas não são iguais. Digitias novamente!!!');
-	  } 
-	}
-	
+  if(document.getElementById('senha').value == "" || document.getElementById('senha2').value == "")
+  {
+    alert('As senhas não podem ser vazias e são itens obrigatórios. Digitias!');
+  }
+  if(document.getElementById('senha').value != document.getElementById('senha2').value)
+  {
+    alert('As senhas digitadas não são iguais. Digitias novamente!!!');
+  } 
+}
 	
 function versenha()
 {
