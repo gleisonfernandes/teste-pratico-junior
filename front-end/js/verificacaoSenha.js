@@ -1,14 +1,17 @@
 function verificasenha()
 {
-  
-  if(document.getElementById('senha').value == "" || document.getElementById('senha2').value == "")
+  var senhaValida = document.getElementById('senha').value;
+
+  if((senhaValida.length >= 7) && (senhaValida.length <= 20) && (senhaValida.match(/[a-z]+/) || (senhaValida.match(/[A-Z]+/))) && (senhaValida.match(/[0-9]+/)))
   {
-    alert('As senhas não podem ser vazias e são itens obrigatórios. Digitias!');
+    document.getElementById('passwordBlock').innerHTML = "<span style='color: #5b07d5'>Senha valida.</span>";
+  }else if(senhaValida.length ==0){
+    document.getElementById('passwordBlock').innerHTML = "";
+  }else if(senhaValida.length >= 7){
+    document.getElementById('passwordBlock').innerHTML = "<span style='color: #ff0000'>Sua senha é invalida, coloque letras e números.</span>";
+  }else{
+    document.getElementById('passwordBlock').innerHTML = "<span style='color: #ff0000'>Sua senha está fraca.</span>";
   }
-  if(document.getElementById('senha').value != document.getElementById('senha2').value)
-  {
-    alert('As senhas digitadas não são iguais. Digitias novamente!!!');
-  } 
 }
 	
 function versenha()
@@ -24,21 +27,5 @@ function versenha()
     } else {
         // Se o tipo de campo de senha não for um campo de senha, defina-o como senha
         document.getElementById ("senha"). type = 'password';
-    }
-}
-
-function versenha2()
-{
-    // Obtém o tipo atual do campo de senha será senha ou texto
-    var passwordFieldType = document.getElementById("senha2").type;
- 
-    // Verifica se o tipo é um campo de senha
-    if(passwordFieldType == 'password')
-    {
-        // Muda o campo de senha para texto
-        document.getElementById ("senha2"). type = 'text';
-    } else {
-        // Se o tipo de campo de senha não for um campo de senha, defina-o como senha
-        document.getElementById ("senha2"). type = 'password';
     }
 }
