@@ -1,4 +1,4 @@
-function criaMascara(mascaraInput) {
+function criaMascara(mascaraInput){
     const maximoInput = document.getElementById(`${mascaraInput}Input`).maxLength;
     let valorInput = document.getElementById(`${mascaraInput}Input`).value;
     let valorSemPonto = document.getElementById(`${mascaraInput}Input`).value.replace(/([^0-9])+/g, "");

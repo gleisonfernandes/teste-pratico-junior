@@ -44,11 +44,17 @@
                 <p>* Preenchimento obrigatório</p>
                   <div class="col-md-4">
                     <label for="nome" class="form-label">Nome *</label>
-                    <input type="text" class="form-control" id="nome" name="nome" required>
+                    <input type="text" class="form-control" id="nome" name="nome" onkeyup="verificanome()" required>
+                    <div id="nomeBlock" class="col-md-12 form-text">
+                          
+                    </div>
                   </div>
                   <div class="col-md-4">
                     <label for="email" class="form-label">E-mail *</label>
-                      <input type="email" class="form-control" id="email" name="email" required>
+                      <input type="email" class="form-control" id="email" name="email" onkeyup="verificaemail()" required>
+                      <div id="emailBlock" class="col-md-12 form-text">
+                          
+                      </div>
                   </div>
                   <div class="col-md-4">
                     <label for="senha" class="form-label">Senha *</label>
@@ -82,7 +88,7 @@
     </main>
 
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/verificacaoSenha.js"></script>
+    <script src="js/user.js"></script>
 
       
   </body>
